@@ -4,17 +4,19 @@ import SoftBackdrop from './components/SoftBackdrop';
 import Footer from './components/Footer';
 import LenisScroll from './components/lenis';
 import { Route, Routes } from 'react-router-dom';
-import Generator from './pages/generator';
-import Plans from './pages/plans';
-import Mygeneration from './pages/mygeneration';
-import Result from './pages/result';
-import Community from './pages/community';
-import Loading from './pages/loading';
+import Generator from './pages/Generator';
+import Plans from './pages/Plans';
+import Mygeneration from './pages/Mygeneration';
+import Result from './pages/Result';
+import Community from './pages/Community';
+import Loading from './pages/Loading';
+import { Toaster } from 'react-hot-toast';
 
 
 function App() {
 	return (
 		<>
+             <Toaster toastOptions={{style: {background : '#333', color:'#fff'}}} />		
 			<SoftBackdrop />
 			<LenisScroll />
 			<Navbar />
